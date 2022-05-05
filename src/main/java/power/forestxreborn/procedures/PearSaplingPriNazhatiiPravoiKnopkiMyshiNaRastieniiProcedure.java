@@ -20,9 +20,9 @@ public class PearSaplingPriNazhatiiPravoiKnopkiMyshiNaRastieniiProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("forest", "pear_tree"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("forest", "pear_tree_fix"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 4), new BlockPos(x - 6, y, z - 4),
+					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 5), new BlockPos(x - 6, y, z - 5),
 							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 							_serverworld.random, 3);
 				}

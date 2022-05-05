@@ -46,9 +46,9 @@ public class LemonSaplingKoghdaRastieniieDobavlienoProcedure {
 					}
 				}.checkPlantType(world, new BlockPos(x, y, z))) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("forest", "lemon_tree"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("forest", "lemon_tree_fix"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 4), new BlockPos(x - 6, y, z - 4),
+							template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 3), new BlockPos(x - 4, y, z - 3),
 									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}

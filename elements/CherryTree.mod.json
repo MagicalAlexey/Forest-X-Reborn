@@ -2,7 +2,7 @@
   "_fv": 29,
   "_type": "structure",
   "definition": {
-    "structure": "cherry_tree",
+    "structure": "cherry_tree_fix",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 125000,

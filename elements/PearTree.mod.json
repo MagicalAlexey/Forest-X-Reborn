@@ -2,7 +2,7 @@
   "_fv": 29,
   "_type": "structure",
   "definition": {
-    "structure": "pear_tree",
+    "structure": "pear_tree_fix",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 125000,

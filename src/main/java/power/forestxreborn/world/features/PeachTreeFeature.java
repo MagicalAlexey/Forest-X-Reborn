@@ -58,7 +58,7 @@ public class PeachTreeFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("forest", "peach_tree"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("forest", "peach_tree_fix"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
