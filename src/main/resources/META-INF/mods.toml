@@ -4,11 +4,11 @@ license="MIT License"
 
 [[mods]]
 modId="forest"
-version="1.0.0.2"
+version="1.0.0.3"
 displayName="Forest X Reborn"
 credits="Created by MagicalAlexey"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/forest-x-reborn"
-updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Forest-X-Java-Edition/main/update.json"
+updateJSONURL="https://raw.githubusercontent.com/MagicalAlexey/Forest-X-Reborn/main/update.json"
 logoFile="logo.png"
 authors="MagicalAlexey"
 description='''
