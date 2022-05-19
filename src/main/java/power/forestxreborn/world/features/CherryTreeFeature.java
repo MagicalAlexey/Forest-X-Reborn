@@ -5,7 +5,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
@@ -35,7 +34,7 @@ public class CherryTreeFeature extends Feature<NoneFeatureConfiguration> {
 	public static Feature<?> feature() {
 		FEATURE = new CherryTreeFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("forest:cherry_tree", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("forest:cherry_tree", CONFIGURED_FEATURE, List.of(BiomeFilter.biome()));
+		PLACED_FEATURE = PlacementUtils.register("forest:cherry_tree", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 

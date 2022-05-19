@@ -1,6 +1,10 @@
 
 package power.forestxreborn.world.biome;
 
+import power.forestxreborn.init.ForestModBiomes;
+
+import net.minecraftforge.common.BiomeDictionary;
+
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
@@ -21,10 +25,13 @@ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
 import java.util.List;
 
@@ -63,5 +70,7 @@ public class FructicForestBiome {
 	}
 
 	public static void init() {
+		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(ForestModBiomes.FRUCTIC_FOREST.get())),
+				BiomeDictionary.Type.FOREST);
 	}
 }

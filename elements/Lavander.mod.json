@@ -90,6 +90,7 @@
         "value": "mutated_forest"
       }
     ],
-    "patchSize": 64
+    "patchSize": 64,
+    "generateAtAnyHeight": false
   }
 }
